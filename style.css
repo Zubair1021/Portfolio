@@ -1,0 +1,718 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    color: #ededed;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:rgba(96, 131, 197, 0.952);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+#h_content .typing{
+       font-size: 34px; 
+       font-weight: 900;
+       color: #0ef;
+       padding-left: 25%;
+    
+}
+#navbar a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 35px;
+    transition:  0.3sec;
+    animation: slidetop 0.5s ease forwards;
+    opacity: 0.5;
+
+}
+
+/* Navbar animtion */
+@keyframes slidetop{
+    0%{
+        transform:translatey(100px);
+        opacity: 0;
+    }
+   100%{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+
+
+#navbar a:hover{
+    color: #0ef
+}
+.por{
+    position: relative;
+    font-size: 30px;
+    color:#0ef;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+}
+
+/* logo animtion */
+@keyframes slideright{
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+   100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.content{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgb(32, 71, 177);
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+#mypic img{
+
+    position: relative;
+    left: 80px;
+    bottom:50px;
+    opacity: 70%;
+    border: 3px solid #fff;
+    border-radius: 10%;
+    transition: 3s;
+}
+
+#mypic:hover img{
+    transform: scale(0.9);
+}
+
+#h_content{
+    max-width: 600px;
+}
+#h_content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+#h_content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+#h_content p{
+    font-size: 25px;
+}
+#home-logo a{
+display:inline-flex;
+justify-content: center;
+align-items: center;
+width:50px;
+height: 50px;
+background: transparent;
+border: 2px solid #0ef;
+border-radius: 50%;
+color: #0ef;
+text-decoration: none;
+margin: 30px 15px 30px 0;
+position: relative;
+top: 10px;
+}
+#home-logo a:hover{
+    background-color: #0ef;
+    box-shadow: 0 0 20px #0ef;
+}
+#btnbox{
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0ef;
+    border-radius: 40px;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+#btnbox:hover{
+    background-color: #0ef;
+    box-shadow: 0 0 40px cyan;
+}
+
+
+
+#myname{
+    display: inline-block;
+
+}
+
+#myname h1{
+    letter-spacing: 2px;
+    width: 100%;
+    border-right: 5px solid;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: 
+    typing 3s steps(16) ,
+    cursor .4s step-end infinite alternate;
+    
+}
+
+/* Typing and cusor Effect */
+
+@keyframes cursor{
+    50%{border-color:transparent}
+}
+@keyframes typing{
+    from{width:0}
+}
+
+
+
+
+
+/* about Section Styling Code */
+
+#about{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(32, 71, 177);
+    padding: 70px 10% 0;
+   
+}
+#about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ #right-side pre{
+   position: relative;
+   top: 50px;
+   bottom: 250px;
+   color: #fff;
+   right: 150px;
+   font-size: 16px;
+   font-weight: 800;
+   letter-spacing: 1px;
+
+}
+
+
+#aboutarea span{
+font-size: 45px;
+font-weight: 800;
+text-align: center;
+color: #0ef;
+
+}
+#aboutarea h2{
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color:#fff;
+
+    }
+
+
+
+#imgleft img{
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    margin-top: 30%;
+    opacity: 90%;
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+    transition: 3s;
+}
+
+#imgleft:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#btnbox1{
+    position: relative;
+    left: 600px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0ef;
+    border-radius: 40px;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+#btnbox1:hover{
+    background-color: #0ef;
+    box-shadow: 0 0 40px cyan;
+}
+
+
+/* skills section styling code */
+
+
+#skills{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 71, 177);
+    padding: 70px 10% 0;
+}
+
+#skills .span{
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: #0ef;
+    }
+    #skills h2{
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+        color:#fff;
+    
+ }
+ #skilltop {
+    position: relative;
+    top: 70px;
+}
+
+
+
+
+#skillright{
+    position: relative;
+    top: 130px;
+}
+#skilltop h3{
+    position: relative;
+    bottom: 20px;
+ color: black;
+ font-size: 25px;
+ font-weight:900;
+}
+
+#skilltop p{
+    color:#ededed;
+    font-size: 18px;
+    font-weight:900;
+   }
+
+
+#skillright span{
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+#skillright .bar .line{
+    height: 5px;
+    width: 100%;
+    background:black;
+    position: relative;
+}
+
+#skillright .bar{
+    margin-bottom: 15px;
+}
+
+#skillright .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#skillright .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top:0;
+    background:#0ef;
+}
+
+#skillright .html::before{
+    width: 90%;
+}
+#skillright .css::before{
+    width: 70%;
+}
+#skillright .java::before{
+    width: 60%;
+}
+#skillright .c::before{
+    width: 90%;
+}
+#skillright .csh::before{
+    width: 90%;
+}
+#skillright .cp::before{
+    width: 90%;
+}
+#skillright .vc::before{
+    width: 80%;
+}
+#skillright .gui::before{
+    width: 85%;
+}
+
+#btnbox2{
+    position: relative;
+    top:170px;
+    left: 650px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0ef;
+    border-radius: 40px;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+#btnbox2:hover{
+    background-color: #0ef;
+    box-shadow: 0 0 40px cyan;
+}
+
+/* project section styling code */
+
+
+
+#projects
+{
+    position: relative;
+    width: 100%;
+    height: 220vh;
+    background-color: rgb(32, 71, 177);
+    padding: 70px 10% 0;
+   
+}
+.projectarea .span{
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: #0ef;
+    }
+.projectarea h2{
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+        color:#fff;
+    
+ }
+ .projectarea p{
+    font-weight: 800;
+    font-size: 20px;
+    color: #0ef;
+
+ }
+ .projectarea .mainline p{
+    position: relative;
+    top: 30px;
+    color: #ededed;
+    font-size: 18px;
+    font-weight: 700;
+ }
+ .projectarea .mainline .font2{
+    color: #0ef;
+ }
+
+ .projectarea .mainline .font1{
+    color:black;
+ }
+a{
+    color:black;
+    font-weight: 600;
+    text-decoration: none;
+    outline:none;
+    transition: 0.3s;
+}
+
+
+.projectcontent{
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+}
+.effect{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect .effect-img{
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+
+
+}
+
+.effect .effect-img img{
+    width: 40%;
+    height:40%;
+    transition: all at ease 0.3s;
+    
+}
+.effect:hover .effect-img img{
+    transform: scale(1.1);
+    box-shadow: none;
+    border-radius: none;
+}
+
+.effect-text{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    bottom:15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: all at ease 0.3s;
+    opacity: 0;
+}
+.effect .effect-text .inner{
+    position: absolute;
+    padding: 15px;
+}
+
+.effect:hover .effect-text{
+    opacity: 0.9;
+}
+
+
+ .effect .effectbtn{
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #ededed;
+    background-color:#0ef;
+    border: 2px solid black;
+    border-radius: 20%;
+
+ }
+
+ .effect-img img{
+    border: 2px solid #ededed;
+    border-radius: 10px;
+    box-shadow: 50px 50px 50px #0ef;
+    opacity: 90%;
+    
+ }
+/* contact section styling code */
+
+
+.contactcontent .contactleft .row{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+
+}
+
+.contactcontent .contactleft .row .info{
+   margin-left: 35px;
+   margin-top: 20px;
+   position: relative;
+   bottom: 28px;
+
+}
+.contactcontent .contactleft .info .head{
+    font-weight: 700;
+    font-size: 18px;
+}
+.contactcontent .contactleft .info .subtitle{
+    color: rgba(235, 233, 233, 0.733);
+    font-size: 16px;
+
+}
+
+
+.contactcontent .contactleft  .row i{
+    font-size: 30px;
+    color: #0ef;
+    position: relative;
+    top: 20px;
+}
+.contentright{
+    position: relative;
+    left: 450px;
+    bottom: 119px;
+    display: inline-block;
+}
+.contentright .text1{
+    position: relative;
+    bottom: 10px;
+    color:#0ef;
+    font-size: 25px;
+    font-weight:900;
+}
+
+
+#contact{
+    position: relative;
+    width: 100%;
+    height: 146vh;
+    background-color: rgb(32, 71, 177);
+    padding: 70px 10% 0;
+}
+.contactarea .span{
+    font-size: 45px;
+    font-weight: 800;
+   text-align: center;
+    color: #0ef;
+    }
+.contactarea h2{
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+        color:#fff;
+    
+ }
+
+.contactleft .text{
+    position: relative;
+    bottom: 20px;
+ color: black;
+ font-size: 25px;
+ font-weight:900;
+ top: 30px;
+}
+
+
+.contactleft p{
+    position: relative;
+    color:#ededed;
+    font-size: 18px;
+    font-weight:900;
+    top: 40px;
+   }
+
+
+
+   .icon{
+    position: relative;
+    top: 150px;
+   }
+
+.contentright form input{
+ margin-top: 5px;
+ height: 40px;
+ width: 200px;
+ color:#0ef;
+ font-size: 16px;
+ font-weight: 500;
+ border: 2px solid #ededed;
+ border-radius: 5px;
+ background-color: rgba(34, 33, 33, 0.37);
+}
+.contentright form .subject input{
+    width: 434px;
+}
+.contentright form .textfie textarea{
+    position: relative;
+    top: 30px;
+    color: aquamarine;
+    border: 2px solid #ededed;
+    border-radius: 5px;
+    height: 200px;
+    width: 434px;
+    background-color: rgba(34, 33, 33, 0.37);
+
+}
+
+.contentright form .email{
+    position: relative;
+    bottom: 45px;
+    left: 230px;
+
+}
+
+
+.contentright .button button{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 230px;
+    top: 100px;
+    right: 30px;
+    color: #ededed;
+    background-color:#0ef;
+    border-radius: 40px;
+}
+.contentright .button button:hover{
+    background-color: #0ef;
+    box-shadow: 0 0 40px cyan;
+}
+
+
+ /* footer section styling code */
+
+
+ #footer
+ {
+     position: relative;
+     width: 100%;
+     height: 18vh;
+     background-color: rgba(0, 0, 0, 0.918);
+     display: flex;
+     align-items: center;
+     padding: 70px 10% 0;
+    
+ }
+
+ .footer-content p{
+    color: rgba(0, 238, 255, 0.726);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    left: 350px;
+    bottom: 30px;
+ }
